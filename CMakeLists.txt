@@ -1,10 +1,7 @@
 cmake_minimum_required(VERSION 3.7.2)
 project(srdfdom VERSION 1.0.0)
 
-# Boost configuration
-set(BOOST_ROOT "/home/rsc/rsc/projects/libraries/dfki/dependancies/boost_1_82_0")
-set(BOOST_LIBRARYDIR "${BOOST_ROOT}/stage/lib")
-set(BOOST_INCLUDEDIR "${BOOST_ROOT}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 
 # Dependencies
 find_package(Boost REQUIRED)
