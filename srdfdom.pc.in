@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: srdfdom
+Description: Semantic Robot Description Format (SRDF) parser
+Version: 1.0.0
+Requires: tinyxml2 console_bridge urdfdom_headers
+Libs: -L${libdir} -lsrdfdom
+Cflags: -I${includedir}
